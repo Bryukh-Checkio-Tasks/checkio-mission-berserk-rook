@@ -1,11 +1,9 @@
-def checkio(a, b):
-    """
-        sums two passed arguments
-    """
-    return None
+def berserk_rook(berseker, enemies):
+    return 0
 
 if __name__ == '__main__':
     #These "asserts" using only for self-checking and not necessary for auto-testing
-    assert checkio(3, 2) == 5
-    assert checkio(5, 7) == 12
-    print('Done')
+    assert berserk_rook('d3', {'d6', 'b6', 'c8', 'g4', 'b8', 'g6'}) == 5
+    assert berserk_rook('a2', {'f6', 'f2', 'a6', 'f8', 'h8', 'h6'}) == 6
+    assert berserk_rook('a2', {'f6', 'f8', 'f2', 'a6', 'h6'}) == 4
+
