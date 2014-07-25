@@ -116,7 +116,7 @@
       <tspan x="-11.475" y="15" font-family="Roboto-Bold" font-size="40" fill="#294270">7</tspan>
     </text>
     <path d="M255.144,324.5 L255.144,169.5" fill-opacity="0" stroke="#294270" stroke-width="4"/>
-    <path d="M255.144,169.5 L155.144,169.5" fill-opacity="0" stroke="#294270" stroke-width="4"/>
+    <path d="M405.5,169.5 L155.144,169.5" fill-opacity="0" stroke="#294270" stroke-width="4"/>
     <path d="M155.144,169.5 L155.144,69.5" fill-opacity="0" stroke="#294270" stroke-width="4"/>
     <path d="M155.144,69.5 L205.144,69.5" fill-opacity="0" stroke="#294270" stroke-width="4"/>
     <text transform="matrix(1, 0, 0, 1, 51.475, 68)">
