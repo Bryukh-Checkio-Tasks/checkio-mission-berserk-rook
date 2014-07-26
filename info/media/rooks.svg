@@ -363,7 +363,7 @@
     </text>
     <text transform="matrix(1, 0, 0, 1, 279.644, 533.5)">
       <tspan x="-71.033" y="-10.5" font-family="Roboto-Regular" font-size="36" fill="#294270">one path</tspan>
-      <tspan x="-65.074" y="37.5" font-family="Roboto-Regular" font-size="36" fill="#294270">result: 4</tspan>
+      <tspan x="-65.074" y="37.5" font-family="Roboto-Regular" font-size="36" fill="#294270">result: 5</tspan>
     </text>
     <text transform="matrix(1, 0, 0, 1, 959.644, 533.5)">
       <tspan x="-108.343" y="-10.5" font-family="Roboto-Regular" font-size="36" fill="#294270">several paths</tspan>

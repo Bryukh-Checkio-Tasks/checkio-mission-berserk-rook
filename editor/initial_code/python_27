@@ -1,4 +1,4 @@
-def berserk_rook(berseker, enemies):
+def berserk_rook(berserker, enemies):
     return 0
 
 if __name__ == '__main__':
