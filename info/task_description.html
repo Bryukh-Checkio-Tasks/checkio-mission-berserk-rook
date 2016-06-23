@@ -49,9 +49,9 @@
         <strong>Example:</strong>
     </p>
     <pre class="brush: python">{% if interpreter.slug == "js-node" %}
-berserkRook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
-berserkRook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
-berserkRook(u'a2', {u'f6', u'f8', u'f2', u'a6', u'h6'}) == 4
+berserkRook('d3', ['d6', 'b6', 'c8', 'g4', 'b8', 'g6']) == 5
+berserkRook('a2', ['f6', 'f2', 'a6', 'f8', 'h8', 'h6']) == 6
+berserkRook('a2', ['f6', 'f8', 'f2', 'a6', 'h6']) == 4
 {% else %}
 berserk_rook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
 berserk_rook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
