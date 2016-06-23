@@ -21,7 +21,10 @@ api.add_listener(
             'python-3': cover,
             'js-node': cover_codes.js_unwrap_args
         },
-        function_name="berserk_rook"
+        function_name={
+            "python": "berserk_rook",
+            "js": "berserkRook"
+        }
         # checker=None,  # checkers.float.comparison(2)
         # add_allowed_modules=[],
         # add_close_builtins=[],

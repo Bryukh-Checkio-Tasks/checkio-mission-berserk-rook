@@ -6,7 +6,7 @@
 
 <p>Se te informara la posici&oacute;n de tu torre (<em>berserk rook</em>) y las posiciones de las torres enemigas. Tu objetivo es capturar el mayor n&uacute;mero de unidades posibles sin detenerse. Cada movimiento de tu respuesta debe capturar una unidad enemiga. El resultado ser&aacute; el m&aacute;ximo n&uacute;mero de torres enemigas capturadas.</p>
 
-<p style="text-align: center;"><img alt="rooks" class="for_info_only" src="{{MEDIA}}rooks.png" title="rooks" width="600px" /> <img alt="rooks" class="for_editor_only" src="{{MEDIA}}rooks.png" title="rooks" width="380px" /></p>
+<p style="text-align: center;"><img class="for_info_only" title="rooks" src="{{MEDIA}}rooks.png" alt="rooks" style="max-height: 300px" /></p>
 
 <p><strong>Datos de Entrada: </strong> Dos argumentos. Posici&oacute;n de tu torre (<em>berserk rook</em>) como una cadena (<em>str</em>), y las posiciones de las torres enemigas, como un set de cadenas (<em>str</em>).</p>
 
@@ -15,11 +15,15 @@
 <div class="for_info_only">
 <p><strong>Ejemplo:</strong></p>
 
-<pre class="brush: python">
-berserk_rook(u&#39;d3&#39;, {u&#39;d6&#39;, u&#39;b6&#39;, u&#39;c8&#39;, u&#39;g4&#39;, u&#39;b8&#39;, u&#39;g6&#39;}) == 5
-berserk_rook(u&#39;a2&#39;, {u&#39;f6&#39;, u&#39;f2&#39;, u&#39;a6&#39;, u&#39;f8&#39;, u&#39;h8&#39;, u&#39;h6&#39;}) == 6
-berserk_rook(u&#39;a2&#39;, {u&#39;f6&#39;, u&#39;f8&#39;, u&#39;f2&#39;, u&#39;a6&#39;, u&#39;h6&#39;}) == 4
-    </pre>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+berserkRook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
+berserkRook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
+berserkRook(u'a2', {u'f6', u'f8', u'f2', u'a6', u'h6'}) == 4
+{% else %}
+berserk_rook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
+berserk_rook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
+berserk_rook(u'a2', {u'f6', u'f8', u'f2', u'a6', u'h6'}) == 4
+{% endif %}</pre>
 </div>
 
 <p class="for_info_only"><strong>&iquest;C&oacute;mo se usa?: </strong> Para cualquier ajedrez y casi cualquier otro juego es importante pensar varios pasos en el futuro. Aqu&iacute; hemos creado una situaci&oacute;n simple que ilustra este concepto. La idea b&aacute;sica es pensar en problemas de optimizaci&oacute;n utilizando modelos.</p>

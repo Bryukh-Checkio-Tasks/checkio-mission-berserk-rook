@@ -31,8 +31,7 @@
 </p>
 
 <p style="text-align: center;">
-    <img class="for_info_only" title="rooks" src="{{MEDIA}}rooks.png" alt="rooks" width="600px"/>
-    <img class="for_editor_only" title="rooks" src="{{MEDIA}}rooks.png" alt="rooks" width="380px"/>
+    <img class="for_info_only" title="rooks" src="{{MEDIA}}rooks.png" alt="rooks" style="max-height: 300px" />
 </p>
 
 <p>
@@ -49,11 +48,15 @@
     <p>
         <strong>Example:</strong>
     </p>
-    <pre class="brush: python">
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+berserkRook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
+berserkRook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
+berserkRook(u'a2', {u'f6', u'f8', u'f2', u'a6', u'h6'}) == 4
+{% else %}
 berserk_rook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
 berserk_rook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
 berserk_rook(u'a2', {u'f6', u'f8', u'f2', u'a6', u'h6'}) == 4
-    </pre>
+{% endif %}</pre>
 </div>
 
 <p class="for_info_only">
