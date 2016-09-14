@@ -1,0 +1,73 @@
+﻿<div class="for_info_only" style="text-align: center">
+    <img src="{{MEDIA}}title.png" style="max-height: 350px">
+</div>
+<p>
+    古来より存在し、多くの人が少なくとも基本的なルールを理解している 
+    <a href="http://en.wikipedia.org/wiki/Chess">チェス</a>をあなたも知っているであろう。.
+    チェスは8行(ランクと呼ばれる1から8の数値からなる)、8列(ファイルと呼ばれるaからhの文字からなる)
+    のチェック柄の盤上で二人で行う戦略ゲームである。
+    盤上の各マスは文字と数値からなる固有の座標で識別される。
+    (例, "a1", "h8", "d6")
+
+</p>
+
+
+<p>
+    このミッションでのあなたのルークを見てみよう。
+    素早い突きと強固な守りを持つ危険な恐怖の駒である。
+    このルークは縦横に空のマスを無制限に移動可能であるが他の駒を飛び越せない。
+    他の駒と同様に目標となった敵の駒がいたマスを占めるやり方で捕獲を行う。
+</p>
+<p>
+    このミッションは凶暴化ルーク1つとそれに敵対するルークの軍隊で行う。
+    凶暴化ルークは敵を捕獲できる場合にのみ移動できる。
+    手番において目標となる敵の駒がある限りそれを捕獲して移動を継続でき、
+    捕獲不可となった時点で停止する。
+</p>
+<p>
+    あなたは凶暴化ルークの位置と敵ルークの位置が与えられる。
+    止まることなく可能な限り多くの敵を捕獲するのが目標である。
+    凶暴化ルークの各移動は敵の捕獲であること。
+    敵ルークの最大捕獲数が解答である。
+</p>
+
+<p style="text-align: center;">
+    <img class="for_info_only" title="rooks" src="{{MEDIA}}rooks.png" alt="rooks" style="max-height: 300px" />
+</p>
+
+<p>
+    <strong>入力: </strong>
+    引数は2つ。凶暴化ルークの位置(string型) と敵ルークの位置(string型のset)
+</p>
+
+<p>
+    <strong>出力: </strong> 可能な敵ルークの最大捕獲数(integer型)
+</p>
+
+
+<div class="for_info_only">
+    <p>
+        <strong>例:</strong>
+    </p>
+    <pre class="brush: python">{% if interpreter.slug == "js-node" %}
+berserkRook('d3', ['d6', 'b6', 'c8', 'g4', 'b8', 'g6']) == 5
+berserkRook('a2', ['f6', 'f2', 'a6', 'f8', 'h8', 'h6']) == 6
+berserkRook('a2', ['f6', 'f8', 'f2', 'a6', 'h6']) == 4
+{% else %}
+berserk_rook(u'd3', {u'd6', u'b6', u'c8', u'g4', u'b8', u'g6'}) == 5
+berserk_rook(u'a2', {u'f6', u'f2', u'a6', u'f8', u'h8', u'h6'}) == 6
+berserk_rook(u'a2', {u'f6', u'f8', u'f2', u'a6', u'h6'}) == 4
+{% endif %}</pre>
+</div>
+
+<p class="for_info_only">
+    <strong>どのように使われるか: </strong>
+    チェスやほとんどのゲームで何手か先を読むのは重要である。
+    この考えを表現するのにこのようなシンプルな状況を創造した。
+    モデルを使用した問題の最適化について検討するのは基本的なアイディアである。
+</p>
+
+<p>
+    <strong>事前条件:</strong><br>
+    0 &lt; enemies &le; 8
+</p>
