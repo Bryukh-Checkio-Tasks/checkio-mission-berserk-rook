@@ -1,6 +1,6 @@
 "use strict";
-function berserkRook(marbles, step) {
-    return 0.5
+function berserkRook(berserker, enemies) {
+    return 0
 }
 
 var assert = require('assert');
